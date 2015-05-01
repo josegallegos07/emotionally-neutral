@@ -2,8 +2,27 @@
 (function() {
 
   $(function() {
+    var rendered, template;
     console.log("void");
-    return window._app = {};
+    window._app = {};
+    _app.colors = [
+      {
+        "name": "white",
+        "hex": "#FFFFFF"
+      }, {
+        "name": "grey",
+        "hex": "#BEBEBE"
+      }, {
+        "name": "black",
+        "hex": "#000000"
+      }, {
+        "name": "red",
+        "hex": "#FF0000"
+      }
+    ];
+    template = $('body').html();
+    rendered = Mustache.render(template, _app);
+    return $('body').html(rendered);
   });
 
 }).call(this);
