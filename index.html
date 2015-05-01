@@ -19,19 +19,23 @@
 
 </head>
 <body>
-  <div class="row">
-    <div class="large-12 columns">
-      <h1>Emotionally Neutral</h1>
-      <h3>An emotionally-neutral color palette.</h3>
-    </div>
-  <div>
-  <div class="row">
-    <div class="large-12 columns" id="color-grid">
-      {{#colors}}
-      <div class="large-3 columns">
-        {{name}} {{hex}}
+  <div class="section-container auto" id="header-container">
+    <section>
+      <div class="large-12 columns">
+        <h1>Emotionally Neutral</h1>
+        <h3>An emotionally-neutral color palette.</h3>
       </div>
-      {{/colors}}
-    </div>
+    </section>
+  </div>
+  <div class="section-container auto" id="color-grid-container">
+    <section>
+      <div class="large-12 columns" id="color-grid">
+        {{#colors}}
+        <div class="large-3 columns">
+          {{name}} {{hex}}
+        </div>
+        {{/colors}}
+      </div>
+    </section>
   </div>
 </body>
