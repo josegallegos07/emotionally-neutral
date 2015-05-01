@@ -19,11 +19,19 @@
 
 </head>
 <body>
-  <div class="large-8 columns" id="color-grid">
-    {{#colors}}
-    <div class="large-4 small-6 columns">
-      {{name}} {{hex}}
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Emotionally Neutral</h1>
+      <h3>An emotionally-neutral color palette.</h3>
     </div>
-    {{/colors}}
+  <div>
+  <div class="row">
+    <div class="large-12 columns" id="color-grid">
+      {{#colors}}
+      <div class="large-3 columns">
+        {{name}} {{hex}}
+      </div>
+      {{/colors}}
+    </div>
   </div>
 </body>
