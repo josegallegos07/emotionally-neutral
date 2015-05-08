@@ -18,6 +18,15 @@
       }, {
         "name": "red",
         "hex": "#FF0000"
+      }, {
+        "name": "blue",
+        "hex": "#0000FF"
+      }, {
+        "name": "yellow",
+        "hex": "#FFFF00"
+      }, {
+        "name": "green",
+        "hex": "#008000"
       }
     ];
     template = $('body').html();
