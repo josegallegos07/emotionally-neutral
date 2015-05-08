@@ -31,6 +31,10 @@ $ ->
     {
       "name" : "green"
       "hex" : "#008000"
+    },
+    {
+      "name" : "purple"
+      "hex" : "#800080"
     }
   ]
   template = $('body').html()
