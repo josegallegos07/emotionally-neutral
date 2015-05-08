@@ -28,7 +28,10 @@
     <div class="row" id="color-grid">
       {{#colors}}
       <div class="col-sm-3">
-        {{name}} {{hex}}
+        <div class="panel color-panel text-center" style="background-color: {{hex}};">
+          <h3>{{name}}</h3>
+          <h5>{{hex}}</h5>
+        </div>
       </div>
       {{/colors}}
     </div>
