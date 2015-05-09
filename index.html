@@ -20,8 +20,8 @@
   <script src="emotionally-neutral.js"></script>
 
 </head>
-<body class="container text-center">
-  <div id="header-container">
+<body class="text-center">
+  <div class="section" id="header-container">
     <h1>Emotionally Neutral</h1>
     <ul class="list-group list-unstyled">
       <li>Don't offend your research participants with bright and vibrant colors.</li>
@@ -30,14 +30,16 @@
     </ul>
     <p>
       <strong>Available for commercial use.</strong>
+      <br><br>
+      <a href="#color-grid-container" class="btn btn-primary" role="button">See the palette</a>
     </p>
   </div>
-  <div id="color-grid-container">
+  <div class="section" id="color-grid-container">
     <div class="row" id="color-grid">
       {{#colors}}
       <div class="col-sm-3">
-        <div class="panel color-panel text-center" style="background-color: {{hex}};">
-          <h3>{{name}}</h3>
+        <div class="panel color-panel text-center">
+          <div class="color-box center-block" style="background-color: {{hex}};"></div>
           <h5>{{hex}}</h5>
           <h5>{{rgb}}</h5>
         </div>
@@ -45,10 +47,12 @@
       {{/colors}}
     </div>
   </div>
-  <div id="footer-container">
+  <div class="section" id="footer-container">
     <p>
       Made by <a href="http://josegallegos.info" target="_blank">Jose Gallegos</a>
+      <br>
+      Open sourced under MIT.
     </p>
-    <iframe src="https://ghbtns.com/github-btn.html?user=josegallegos07&repo=emotionally-neutral&type=star&count=false&size=large" frameborder="0" scrolling="0" width="76px" height="30px"></iframe>
+    <iframe src="https://ghbtns.com/github-btn.html?user=josegallegos07&repo=emotionally-neutral&type=star&count=false&size=small" frameborder="0" scrolling="0" width="50px" height="30px"></iframe>
   <div>
 </body>

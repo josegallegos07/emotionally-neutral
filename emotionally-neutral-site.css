@@ -4,11 +4,11 @@ body {
 }
 
 ::selection {
-  background: #f81743; /* Safari */
+  background: #2e6da4; /* Safari */
 }
 
 ::-moz-selection {
-  background: #f81743; /* Firefox */
+  background: #2e6da4; /* Firefox */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,26 +16,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  color: #f81743;
+  padding-bottom: 20px;
 }
 
 #header-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  background-color: #233140;
+  color: #FFFFFF;
 }
 
 #color-grid-container {
-  margin-bottom: 20px;
+  background-color: #FFFFFF;
 }
 
 #footer-container {
-  padding-bottom: 20px;
+  background-color: #eef1f8;
+}
+
+.section {
+  padding: 60px 50px 50px 50px;
 }
 
 .color-panel {
   min-height: 180px;
-  padding-top: 30px;
+  padding-top: 35px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 0px;
+}
+
+.color-box {
+  height: 60px;
+  width: 60px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 50%;
 }
 
 .no-margin-top {
