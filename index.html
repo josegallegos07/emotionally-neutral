@@ -55,4 +55,20 @@
     </p>
     <iframe src="https://ghbtns.com/github-btn.html?user=josegallegos07&repo=emotionally-neutral&type=star&count=false&size=small" frameborder="0" scrolling="0" width="50px" height="30px"></iframe>
   <div>
+  <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 500);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
 </body>
