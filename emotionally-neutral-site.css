@@ -32,6 +32,10 @@ h1 {
   background-color: #eef1f8;
 }
 
+.img-small {
+  width: 60px;
+}
+
 .section {
   padding: 60px 50px 50px 50px;
 }
