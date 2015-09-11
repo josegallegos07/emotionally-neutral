@@ -2,7 +2,6 @@
 $ -> 
   console.log "void"
   window._app = {}
-  # NOTE: placeholder colors
   _app.colors = [
     {
       "name" : "white"
